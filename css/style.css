@@ -22931,3 +22931,100 @@ html.dark-mode .ht-home2-secondary-btn:hover {
     color: #FFFFFF !important;
     border-color: #435747 !important;
 }
+
+
+
+
+
+
+
+
+
+/* =========================================
+   HEARTH & TIMBER — ACTIVE MENU COLORS
+   LIGHT MODE + DARK MODE + RESPONSIVE
+========================================= */
+
+/* ---------- LIGHT MODE ---------- */
+
+.ht-navigation .ht-nav-link {
+    transition: color 0.25s ease, background 0.25s ease;
+}
+
+/* Hover and Active Menu */
+.ht-navigation .ht-nav-link:hover,
+.ht-navigation .ht-nav-link.active,
+.ht-navigation .ht-nav-item.active > .ht-nav-link,
+.ht-dropdown-menu a:hover,
+.ht-dropdown-menu a.active {
+    color: var(--ht-primary, #6B4226) !important;
+}
+
+/* Active menu underline */
+.ht-navigation > .ht-nav-link.active::after,
+.ht-navigation > .ht-nav-item.active > .ht-nav-link::after {
+    width: 100%;
+}
+
+/* Home dropdown hover */
+.ht-home-dropdown:hover > .ht-nav-link,
+.ht-home-dropdown.active > .ht-nav-link {
+    color: var(--ht-primary, #6B4226) !important;
+}
+
+/* ---------- DARK MODE ---------- */
+
+html.dark-mode .ht-navigation .ht-nav-link:hover,
+html.dark-mode .ht-navigation .ht-nav-link.active,
+html.dark-mode .ht-navigation .ht-nav-item.active > .ht-nav-link,
+html.dark-mode .ht-dropdown-menu a:hover,
+html.dark-mode .ht-dropdown-menu a.active {
+    color: #D9A06B !important;
+}
+
+html.dark-mode .ht-home-dropdown:hover > .ht-nav-link,
+html.dark-mode .ht-home-dropdown.active > .ht-nav-link {
+    color: #D9A06B !important;
+}
+
+/* Active underline in dark mode */
+html.dark-mode .ht-navigation > .ht-nav-link.active::after,
+html.dark-mode .ht-navigation > .ht-nav-item.active > .ht-nav-link::after {
+    background: #D9A06B !important;
+}
+
+/* ---------- RESPONSIVE MENU ---------- */
+
+@media (max-width: 1199px) {
+
+    .ht-navigation .ht-nav-link:hover,
+    .ht-navigation .ht-nav-link.active,
+    .ht-navigation .ht-nav-item.active > .ht-nav-link,
+    .ht-dropdown-menu a:hover,
+    .ht-dropdown-menu a.active {
+        color: var(--ht-primary, #6B4226) !important;
+    }
+
+    html.dark-mode .ht-navigation .ht-nav-link:hover,
+    html.dark-mode .ht-navigation .ht-nav-link.active,
+    html.dark-mode .ht-navigation .ht-nav-item.active > .ht-nav-link,
+    html.dark-mode .ht-dropdown-menu a:hover,
+    html.dark-mode .ht-dropdown-menu a.active {
+        color: #D9A06B !important;
+    }
+}
+
+/* ---------- MOBILE DROPDOWN ---------- */
+
+@media (max-width: 767px) {
+
+    .ht-navigation .ht-dropdown-menu a.active {
+        background: #F3EAE0 !important;
+        color: #6B4226 !important;
+    }
+
+    html.dark-mode .ht-navigation .ht-dropdown-menu a.active {
+        background: #302720 !important;
+        color: #D9A06B !important;
+    }
+}
