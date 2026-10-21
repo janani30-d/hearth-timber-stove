@@ -660,3 +660,48 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   SCROLL TO TOP — HEARTH & TIMBER
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollTopButton = document.getElementById("htScrollTop");
+
+    if (!scrollTopButton) return;
+
+    // Show button after scrolling down
+    function updateScrollButton() {
+        if (window.scrollY > 300) {
+            scrollTopButton.classList.add("ht-scroll-visible");
+        } else {
+            scrollTopButton.classList.remove("ht-scroll-visible");
+        }
+    }
+
+    window.addEventListener("scroll", updateScrollButton, {
+        passive: true
+    });
+
+    // Scroll smoothly to the top
+    scrollTopButton.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    // Set initial state
+    updateScrollButton();
+});
