@@ -22895,3 +22895,39 @@ html.dark-mode .ht-login-image-panel {
     outline: none !important;
     box-shadow: none !important;
 }
+
+
+
+
+
+
+/* =========================================
+   DARK MODE — SECONDARY BUTTON
+========================================= */
+
+html.dark-mode .btn-secondary {
+    background: transparent !important;
+    color: #E8D8C5 !important;
+    border: 1px solid #B89A7A !important;
+    box-shadow: none !important;
+}
+
+/* Hover */
+html.dark-mode .btn-secondary:hover {
+    background: #435747 !important;
+    color: #FFFFFF !important;
+    border-color: #435747 !important;
+}
+
+/* Home 2 hero button */
+html.dark-mode .ht-home2-secondary-btn {
+    background: transparent !important;
+    color: #E8D8C5 !important;
+    border: 1px solid #B89A7A !important;
+}
+
+html.dark-mode .ht-home2-secondary-btn:hover {
+    background: #435747 !important;
+    color: #FFFFFF !important;
+    border-color: #435747 !important;
+}
