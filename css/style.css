@@ -23246,3 +23246,218 @@ html.dark-mode .ht-additional-cost-link:focus,
 html.dark-mode .ht-additional-cost-link:active {
     color: #ffffff !important;
 }
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   ABOUT — YEAR-BASED HISTORY TIMELINE
+========================================= */
+
+.ht-about-history {
+    padding: 100px 24px;
+    background: #f6f3ed;
+    color: #30271f;
+}
+
+.ht-about-history-container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ht-about-history-header {
+    max-width: 700px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.ht-about-history-eyebrow {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #a66e43;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.ht-about-history-title {
+    margin: 0 0 18px;
+    color: #30271f;
+    font-size: clamp(32px, 4vw, 46px);
+    line-height: 1.2;
+}
+
+.ht-about-history-title span {
+    display: block;
+    color: #a66e43;
+}
+
+.ht-about-history-intro {
+    margin: 0;
+    color: #756b61;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* TIMELINE */
+
+.ht-about-history-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ht-about-history-timeline::before {
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 115px;
+    width: 1px;
+    background: #d7c3ad;
+    content: "";
+}
+
+.ht-about-history-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 90px 50px minmax(0, 1fr);
+    align-items: start;
+    gap: 0;
+    margin-bottom: 35px;
+}
+
+.ht-about-history-item:last-child {
+    margin-bottom: 0;
+}
+
+.ht-about-history-year {
+    padding-top: 22px;
+    color: #a66e43;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.ht-about-history-dot {
+    position: relative;
+    z-index: 1;
+    width: 15px;
+    height: 15px;
+    margin: 26px auto 0;
+    border: 3px solid #a66e43;
+    border-radius: 50%;
+    background: #f6f3ed;
+    box-shadow: 0 0 0 5px #f6f3ed;
+}
+
+.ht-about-history-card {
+    padding: 25px 28px;
+    border: 1px solid #e6d9ca;
+    border-radius: 4px;
+    background: #fffdf9;
+    transition: border-color 0.25s ease,
+                transform 0.25s ease;
+}
+
+.ht-about-history-card:hover {
+    border-color: #b78256;
+    transform: translateY(-3px);
+}
+
+.ht-about-history-label {
+    display: block;
+    margin-bottom: 10px;
+    color: #a66e43;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.ht-about-history-card h3 {
+    margin: 0 0 10px;
+    color: #30271f;
+    font-size: 20px;
+    line-height: 1.45;
+}
+
+.ht-about-history-card p {
+    margin: 0;
+    color: #756b61;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.ht-about-history-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 55px;
+    text-align: center;
+}
+
+.ht-about-history-footer-line {
+    width: 38px;
+    height: 1px;
+    background: #b78256;
+}
+
+.ht-about-history-footer p {
+    margin: 0;
+    color: #72543b;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* DARK MODE */
+
+html.dark-mode .ht-about-history {
+    background: #211e1a;
+    color: #f5f0e8;
+}
+
+html.dark-mode .ht-about-history-title,
+html.dark-mode .ht-about-history-card h3 {
+    color: #f5f0e8;
+}
+
+html.dark-mode .ht-about-history-title span,
+html.dark-mode .ht-about-history-year,
+html.dark-mode .ht-about-history-label,
+html.dark-mode .ht-about-history-eyebrow {
+    color: #d5a174;
+}
+
+html.dark-mode .ht-about-history-intro,
+html.dark-mode .ht-about-history-card p {
+    color: #d0c5b9;
+}
+
+html.dark-mode .ht-about-history-card {
+    background: #2b2621;
+    border-color: #514235;
+}
+
+html.dark-mode .ht-about-history-card:hover {
+    border-color: #b78256;
+}
+
+html.dark-mode .ht-about-history-timeline::before {
+    background: #65503e;
+}
+
+html.dark-mode .ht-about-history-dot {
+    background: #211e1a;
+    box-shadow: 0 0 0 5px #211e1a;
+}
+
+html.dark-mode .ht-about-history-footer p {
+    color: #e0b18a;
+}

@@ -20432,3 +20432,99 @@ html.dark-mode .ht-home2-hero-accent {
         right: 25px !important;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .ht-about-history {
+        padding: 65px 18px;
+    }
+
+    .ht-about-history-header {
+        margin-bottom: 40px;
+    }
+
+    .ht-about-history-title {
+        font-size: 31px;
+    }
+
+    .ht-about-history-intro {
+        font-size: 13px;
+    }
+
+    .ht-about-history-timeline::before {
+        left: 72px;
+    }
+
+    .ht-about-history-item {
+        grid-template-columns: 55px 35px minmax(0, 1fr);
+        margin-bottom: 25px;
+    }
+
+    .ht-about-history-year {
+        padding-top: 20px;
+        font-size: 13px;
+    }
+
+    .ht-about-history-dot {
+        width: 12px;
+        height: 12px;
+        margin-top: 24px;
+    }
+
+    .ht-about-history-card {
+        padding: 18px 15px;
+    }
+
+    .ht-about-history-card h3 {
+        font-size: 17px;
+    }
+
+    .ht-about-history-card p {
+        font-size: 13px;
+    }
+
+    .ht-about-history-label {
+        font-size: 9px;
+        line-height: 1.6;
+    }
+
+    .ht-about-history-footer {
+        gap: 10px;
+        margin-top: 35px;
+    }
+
+    .ht-about-history-footer-line {
+        width: 20px;
+    }
+
+    .ht-about-history-footer p {
+        font-size: 12px;
+    }
+}
+
+/* RTL */
+
+html[dir="rtl"] .ht-about-history-timeline::before {
+    right: 115px;
+    left: auto;
+}
+
+html[dir="rtl"] .ht-about-history-year {
+    text-align: right;
+}
+
+@media (max-width: 767px) {
+    html[dir="rtl"] .ht-about-history-timeline::before {
+        right: 72px;
+        left: auto;
+    }
+}
