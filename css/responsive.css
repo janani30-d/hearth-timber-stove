@@ -20528,3 +20528,78 @@ html[dir="rtl"] .ht-about-history-year {
         left: auto;
     }
 }
+
+/* =========================================
+   PRODUCTS COMPARISON — iPAD MINI
+========================================= */
+
+@media (min-width: 768px) and (max-width: 900px) {
+
+    .ht-products-compare {
+        padding-left: 12px;
+        padding-right: 12px;
+        overflow: hidden;
+    }
+
+    .ht-products-compare-container {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .ht-products-compare-table-wrapper {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .ht-products-compare-table {
+        width: 100%;
+        min-width: 0;
+        table-layout: fixed;
+        border-collapse: collapse;
+    }
+
+    /* Reduce Features column width */
+    .ht-products-compare-table th:first-child {
+        width: 15%;
+        padding: 10px 6px;
+        overflow-wrap: break-word;
+    }
+
+    /* Give remaining columns equal space */
+    .ht-products-compare-table th:not(:first-child),
+    .ht-products-compare-table td:not(:first-child) {
+        width: 28.33%;
+        padding: 10px 5px;
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
+    .ht-products-compare-column-title {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+    .ht-products-compare-column-subtitle {
+        font-size: 8px;
+        line-height: 1.4;
+    }
+
+    .ht-products-compare-table tbody th,
+    .ht-products-compare-table tbody td {
+        font-size: 9px;
+        line-height: 1.5;
+    }
+
+    .ht-products-compare-link {
+        font-size: 8px;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+
+    .ht-products-compare-action-row td {
+        padding: 9px 4px;
+    }
+}
